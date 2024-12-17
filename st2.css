@@ -1,0 +1,130 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #2c2c2c;
+    background: linear-gradient(135deg, #e69873, #e7b7a1);
+}
+
+.container {
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #bf5e30;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    margin-right:200px;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #bf5e30;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #bf5e30;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background: #bf5e30;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #e69873;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.about, .skills, .projects, .contact {
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px 50px;
+}
+
+.skill-list, .project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card, .project-card {
+    padding: 20px;
+    background: #e7b7a1;
+    border-radius: 10px;
+    max-width: 250px;
+    flex: 1 1 calc(33.33% - 40px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #bf5e30;
+    color: #fff;
+    font-size: 14px;
+}
